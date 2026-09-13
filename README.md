@@ -49,7 +49,6 @@ The root files provide shared data loading, optimization, metrics, distributed s
 torchrun --nproc_per_node=2 multi_train/multi_train_resnet32_dlpb.py \
   cifar100_resnet32_dlpb \
   -m ga_resnet32_gram_dim_32_branch_3 \
-  -c 0,1
 ```
 
 ### ResNet-110
@@ -58,7 +57,6 @@ torchrun --nproc_per_node=2 multi_train/multi_train_resnet32_dlpb.py \
 torchrun --nproc_per_node=2 multi_train/multi_train_resnet110_dlpb.py \
   cifar100_resnet110_dlpb \
   -m ga_resnet110_gram_dim_64_branch_3 \
-  -c 0,1
 ```
 
 ### WideResNet
@@ -67,7 +65,6 @@ torchrun --nproc_per_node=2 multi_train/multi_train_resnet110_dlpb.py \
 torchrun --nproc_per_node=2 multi_train/multi_train_wideresnet_dlpb.py \
   cifar100_wideresnet_dlpb \
   -m wide_resnet20_8_ga_64_branch_3 \
-  -c 0,1
 ```
 
 ### DenseNet-40-k12
@@ -76,7 +73,6 @@ torchrun --nproc_per_node=2 multi_train/multi_train_wideresnet_dlpb.py \
 torchrun --nproc_per_node=2 multi_train/multi_train_densenet_dlpb.py \
   cifar100_densenet40k12_dlpb \
   -m ga_densenetd40k12_branch_3 \
-  -c 0,1
 ```
 
 The default presets use CIFAR-100, 300 epochs, SGD with Nesterov momentum, a multistep learning-rate schedule, and three peer branches. Use `python multi_train/<entry-point>.py --help` to inspect available options.
