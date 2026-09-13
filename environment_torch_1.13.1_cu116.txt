@@ -1,9 +1,0 @@
-python_executable: /home/dongu/private/pytorch-cifar-example/.venv/torch113-cu116/bin/python
-python: 3.10.21
-torch: 1.13.1+cu116
-torchvision: 0.14.1+cu116
-torchaudio: 0.13.1+cu116
-numpy: 1.26.4
-wandb: 0.30.0
-compiled_cuda: 11.6
-cuda_available: True
