@@ -1,4 +1,4 @@
-# Diverse Lightweight Peer Branches (DLPB)
+# Knowledge Distillation with Lightweight Peer Branches for Learning Diverse Representations
 
 Official implementation of **Knowledge Distillation with Lightweight Peer Branches for Learning Diverse Representations**. DLPB trains multiple lightweight peer branches inside a shared backbone and uses their complementary predictions for self-distillation. After training, the peer branches can be removed so inference uses the backbone model.
 
